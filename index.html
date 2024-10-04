@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <title>Simple dev</title>
+  </head>
+  
+  <body class="grad1">
+    <div>
+      <h2 style="text-align: center;position:static;">Login Page</h2>
+      <button class="open-modal">Open Form</button>
+      <div class="hidden container">
+        <button class="close-modal">x</button>
+        <form name="login" method="get" class="login">
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required/>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required/>
+          <button class="lbtn" type="submit" onsubmit="return popup()">Login</button><br><br>
+          <label for="info">Not Registered?   <a href="#link" class="sbtn" style="text-decoration: none;">Sign up</a></label>
+        </form>
+        <form name='Signup' method="post" action="display.php" class="signup hidden">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required/>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required/>
+          <label for="phnum"><b>Phone Number</b></label>
+          <input type="number" placeholder="Enter Phone Number" name="phnum" required/>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required/>
+          <button class="lbtn" type="submit" onsubmit="return popup()">Sign Up</button><br><br>
+          <label for="info">Already Registered?   <a href="#link" class="slbtn" style="text-decoration: none;">Login</a></label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" type="text/javascript">
+
+  </script>
+  </body>
+</html>

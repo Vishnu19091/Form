@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  backdrop-filter: blur(100px);
+}
+.grad1 {
+  background: #ff4e50;
+  background: -webkit-linear-gradient(to bottom right, #2072ff, #9e6fab);
+  background: linear-gradient(to left, #6ca2ff, #e792ff);
+  position: relative;
+}
+h2 {
+  font-size: 50px;
+  background-image: linear-gradient(
+    to right,
+    #ff8c7f 21%,
+    #f99185 50%,
+    #cf556c 100%,
+    #b12a5b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container {
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px;
+  background: whitesmoke;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-radius: 4px;
+  display: inline-block;
+  border: none;
+  background: #ececec;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  border: 2px solid rgb(65, 65, 65);
+  outline: none;
+}
+.sbtn {
+  font-size: medium;
+  color: white;
+  background-color: darkblue;
+  padding: 0.8%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.sbtn:hover {
+  color: rgb(31, 31, 139);
+  background-color: rgb(199, 205, 255);
+}
+.lbtn {
+  background-color: #4caf50;
+  color: white;
+  font-size: medium;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.lbtn:hover {
+  color: #2aab2f;
+  background-color: rgb(197, 255, 207);
+}
+.hidden {
+  display: none;
+}
+
+.open-modal {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 170px;
+  cursor: pointer;
+  top: 45%;
+  left: 43%;
+  position: absolute;
+}
+
+.close-modal {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 90%;
+  font-weight: light;
+  cursor: pointer;
+}
+
+.slbtn {
+  font-size: medium;
+  color: white;
+  background-color: darkblue;
+  padding: 0.8%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.slbtn:hover {
+  color: rgb(31, 31, 139);
+  background-color: rgb(199, 205, 255);
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 100%;
+  }
+}
